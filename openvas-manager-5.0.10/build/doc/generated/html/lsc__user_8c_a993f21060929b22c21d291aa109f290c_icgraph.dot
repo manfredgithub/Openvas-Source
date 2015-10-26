@@ -1,0 +1,12 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="lsc_user_deb_create",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="lsc_user_deb_recreate",height=0.2,width=0.4,color="black",URL="$lsc__user_8h.html#ab42fb9f082e1553c9f3eb3315599ba9d"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="lsc_credential_iterator_deb",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a2b8b6e6e2fa26c078f3087de7ff27ced",tooltip="Get the deb from an LSC credential iterator."];
+}

@@ -1,0 +1,15 @@
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/check.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/ctags.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/doc/CMakeFiles/doc.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/doc/CMakeFiles/doc-full.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/doc/CMakeFiles/doc-omp.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/etags.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/flawfinder.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/manage.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/omp.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/openvasmd.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/otp.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/ovas-mngr-comm.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/rats.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/splint.dir
+/home/peterwang/OpenVAS_Source/openvas-manager-5.0.10/build/src/CMakeFiles/tags.dir

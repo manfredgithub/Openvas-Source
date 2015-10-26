@@ -1,0 +1,18 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="process_alive",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="file_locked",height=0.2,width=0.4,color="black",URL="$locks_8h.html#a36f9acf6230239001e668ad7d97276c4"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="save_kb_backup",height=0.2,width=0.4,color="black",URL="$save__kb_8h.html#a33b6df8ab3c347cda2b2be2ebdb883e4",tooltip="Makes a copy of the knowledge base."];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="save_kb_exists",height=0.2,width=0.4,color="black",URL="$save__kb_8h.html#af9357aec0db0ac5d85d7e0d3a7e155e6"];
+  Node2 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="save_kb_load_kb",height=0.2,width=0.4,color="black",URL="$save__kb_8h.html#a7287c4dab745a6674c05ef1418beac49",tooltip="Restores a previously saved knowledge base."];
+  Node2 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="save_kb_new",height=0.2,width=0.4,color="black",URL="$save__kb_8h.html#a040936a210b4d0e3a67ffd14e4da912b",tooltip="Initialize a new KB that will be saved."];
+}

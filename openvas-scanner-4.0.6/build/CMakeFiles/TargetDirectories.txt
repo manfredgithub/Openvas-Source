@@ -1,0 +1,10 @@
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/check.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/ctags.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/doc/CMakeFiles/doc.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/doc/CMakeFiles/doc-full.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/etags.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/flawfinder.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/openvassd.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/rats.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/splint.dir
+/home/peterwang/OpenVAS_Source/openvas-scanner-4.0.6/build/src/CMakeFiles/tags.dir

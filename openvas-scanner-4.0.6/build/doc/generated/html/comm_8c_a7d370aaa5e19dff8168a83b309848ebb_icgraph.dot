@@ -1,0 +1,20 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="send_plug_info",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="comm_send_pluginlist",height=0.2,width=0.4,color="black",URL="$comm_8h.html#a3c844278ec64368af378548fcac8c2aa",tooltip="Sends the list of plugins that the scanner could load to the client,."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="comm_send_nvt_info",height=0.2,width=0.4,color="black",URL="$comm_8h.html#aa7b0f6d9abdb114dad2784d5f0110df4",tooltip="Send the OTP NVT_INFO message and then handle any COMPLETE_LIST and PLUGIN_INFO commands..."];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="ntp_parse_input",height=0.2,width=0.4,color="black",URL="$ntp_8h.html#ad385351203f78e3406be7002270026d0",tooltip="Parses the input sent by the client before the NEW_ATTACK message."];
+  Node4 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="comm_wait_order",height=0.2,width=0.4,color="black",URL="$comm_8h.html#ae6a440e81d4192ba998ac45d1025b21f",tooltip="This function waits for the attack order of the client. Meanwhile, it processes all..."];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="plugin_send_infos",height=0.2,width=0.4,color="black",URL="$comm_8h.html#a3299bb8b57f3e362fea1eb07705e47c1",tooltip="Sends the plugin info for a single plugin."];
+  Node6 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

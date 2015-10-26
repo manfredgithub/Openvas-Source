@@ -1,0 +1,12 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="update_slave_progress",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="set_report_slave_progress",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a80caaa3b756320c8854ccb48c8e2a0af",tooltip="Set slave progress of a report."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="sql",height=0.2,width=0.4,color="black",URL="$sql_8c.html#ab30e7346a835f4a3edce6f03e16189a8",tooltip="Perform an SQL statement, retrying if database is busy or locked."];
+}

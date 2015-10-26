@@ -1,0 +1,7 @@
+digraph G {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  dir_7031f86093ae5806d270c130bdfa84b8 [shape=box, label="nagios", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_7031f86093ae5806d270c130bdfa84b8.html"];
+}

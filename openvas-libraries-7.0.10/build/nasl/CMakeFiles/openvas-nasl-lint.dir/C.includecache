@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/misc/arglists.h
+
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/nasl/nasl-lint.c
+stdio.h
+-
+stdlib.h
+-
+nasl.h
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/nasl/nasl.h
+glib.h
+-
+gio/gio.h
+-
+
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/nasl/nasl.h
+glib.h
+-
+../misc/arglists.h
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/misc/arglists.h
+

@@ -1,0 +1,16 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="severity_data_level_counts",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="level_max_severity",height=0.2,width=0.4,color="black",URL="$manage_8c.html#a944bb9ece423240e59690aa700f35845",tooltip="Get the minimum severity for a severity level and class."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="level_min_severity",height=0.2,width=0.4,color="black",URL="$manage_8c.html#ab10de498a6cf575c242ac2e96b8c3cc5",tooltip="Get the minimum severity for a severity level and class."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="severity_data_range_count",height=0.2,width=0.4,color="black",URL="$manage_8c.html#a7cdfefbfa5c806c959d26a8b87c13c66",tooltip="Calculate the total of severity counts in a range."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="severity_data_index",height=0.2,width=0.4,color="black",URL="$manage_8c.html#ac77914453335560ec3ce361eea01aaba",tooltip="Convert a severity value into an index in the counts array."];
+}

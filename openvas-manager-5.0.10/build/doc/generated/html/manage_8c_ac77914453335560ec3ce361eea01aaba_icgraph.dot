@@ -1,0 +1,18 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="severity_data_index",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="severity_data_add",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a95a6c59b7403d39f45c6295216f1e1ec",tooltip="Add a severity occurence to the counts of a severity_data_t."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="report_severity_data",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#af8be604b65eac5713738c8177973ddb5",tooltip="Get the result severity counts for a report."];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="severity_data_add_count",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a4e34356cb1218484e4a1721d0764ba62",tooltip="Add a multiple severity occurences to the counts of a severity_data_t."];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="severity_data_range_count",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a51920dffdb90bfbdc2362643a1bd91d6",tooltip="Calculate the total of severity counts in a range."];
+  Node5 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="severity_data_level_counts",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a256c85b0d3fdd9dde6ef6fa5d9a28399",tooltip="Count the occurrences of severities in the levels."];
+}

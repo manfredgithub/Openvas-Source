@@ -1,0 +1,2 @@
+/usr/bin/ar cr libgsad_base.a  CMakeFiles/gsad_base.dir/gsad_base.c.o
+/usr/bin/ranlib libgsad_base.a

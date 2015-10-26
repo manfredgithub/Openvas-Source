@@ -1,0 +1,37 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="manage_check_current_task",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="manage_transaction_stop",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a70586869be78fab18b22b5c9f612ae02",tooltip="Commit the current transaction, if any."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="sql",height=0.2,width=0.4,color="black",URL="$sql_8c.html#ab30e7346a835f4a3edce6f03e16189a8",tooltip="Perform an SQL statement, retrying if database is busy or locked."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="send_to_server",height=0.2,width=0.4,color="black",URL="$ovas-mngr-comm_8c.html#a5e8ebd680f5948035731df580f52bbab",tooltip="Send a message to the server."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="sendn_to_server",height=0.2,width=0.4,color="black",URL="$ovas-mngr-comm_8c.html#a89091612280184720ea4258373546e6a",tooltip="Send a number of bytes to the server."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="set_task_run_status",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a8607acfa50914954cc41f17d045775e6",tooltip="Set the run state of a task."];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="run_status_name",height=0.2,width=0.4,color="black",URL="$manage_8c.html#a8fd61b9a4fc00435cccfc0a13dba3378",tooltip="Get the name of a run status."];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="task_name",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a721a440abdd3dfcf69c768e2fcaa6049",tooltip="Return the name of a task."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="sql_string",height=0.2,width=0.4,color="black",URL="$sql_8c.html#a2666d27f1435fe9af46780748f44c492",tooltip="Get a particular cell from a SQL query, as an string."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node10 [label="sql_x",height=0.2,width=0.4,color="black",URL="$sql_8c.html#ab63ed51752618d573ed942351af63511",tooltip="Get a particular cell from a SQL query."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node11 [label="sql_x_internal",height=0.2,width=0.4,color="black",URL="$sql_8c.html#a848a1089772551bf731c98ef87566f1f",tooltip="Get a particular cell from a SQL query."];
+  Node6 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node12 [label="task_uuid",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a7c5ca575001be2933e3ad2af24678f47",tooltip="Return the UUID of a task."];
+  Node12 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node13 [label="task_run_status",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a6ee81446351e254b95a54483210f1ada",tooltip="Return the run state of a task."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node14 [label="sql_int",height=0.2,width=0.4,color="black",URL="$sql_8c.html#a6305a16af4d5ab584b4611d5b5b812fb",tooltip="Get a particular cell from a SQL query, as an int."];
+  Node14 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

@@ -1,0 +1,21 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="plugin_set_running_state",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="plugin_launch",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8c.html#a98de3d0683725309ac112c7ae19cd0fe"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="plugin_next_unrun_dependencie",height=0.2,width=0.4,color="black",URL="$pluginscheduler_8c.html#ab8f94ad31e3c0272e1b035cedf241c9c"];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="plugins_scheduler_next",height=0.2,width=0.4,color="black",URL="$pluginscheduler_8h.html#a10384fae06ada4c648c98590b2b22f93"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="pluginlaunch_stop",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#ab0f1daaa3f4159b5f781d33ec06f5934"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="process_mgr_sighand_term",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8c.html#a1ec8d6c58d30cf0983e8a35add4f5ff5"];
+  Node6 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="pluginlaunch_init",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#a4a7b1afd48034ddc80ddbcdf68c9e67b"];
+}

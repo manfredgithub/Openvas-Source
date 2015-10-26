@@ -1,0 +1,27 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="delete_slave_task",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="slave_authenticate",height=0.2,width=0.4,color="black",URL="$manage_8c.html#a08629059dbccb26c5e10d44ef08e9b58",tooltip="Authenticate with a slave."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="slave_login",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a7e926a95a812f33b2c16f41a47ce1171",tooltip="Return the login associated with a slave."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="sql_string",height=0.2,width=0.4,color="black",URL="$sql_8c.html#a2666d27f1435fe9af46780748f44c492",tooltip="Get a particular cell from a SQL query, as an string."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="sql_x",height=0.2,width=0.4,color="black",URL="$sql_8c.html#ab63ed51752618d573ed942351af63511",tooltip="Get a particular cell from a SQL query."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="sql_x_internal",height=0.2,width=0.4,color="black",URL="$sql_8c.html#a848a1089772551bf731c98ef87566f1f",tooltip="Get a particular cell from a SQL query."];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="slave_password",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a3d344c3260ef8d3b7ea8d37ea1177266",tooltip="Return the password associated with a slave."];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="slave_host",height=0.2,width=0.4,color="black",URL="$manage_8h.html#a6e8a68bdaf86f2478e83f5cf3113e512",tooltip="Return the host associated with a slave."];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="slave_port",height=0.2,width=0.4,color="black",URL="$manage_8h.html#aef7a0d6cf951344546337e00bcefccf8",tooltip="Return the port associated with a slave."];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

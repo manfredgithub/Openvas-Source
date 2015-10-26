@@ -1,0 +1,195 @@
+GSA INTERNATIONALIZATION HOWTO
+==============================
+
+Usage of gsa:i18n
+=================
+
+To allow a string in GSA to be translated, you must use the XPath function
+gsa:i18n with the following parameters:
+
+"id"      : The identifier that is used to look up the translated string.
+             Usually this is the untranslated version, but it can be different
+             if the parameter "default" is used.
+"context" : The context name which specifies which context groups should
+             be considered when looking up the string. See the section
+             "Contexts" for details on how this works
+"default" : The string to use when no translation is found. If omitted,
+             the id is used.
+            A common usage for not using the id as the default is for
+             allowing prefix or suffix strings that are used in translations
+             but not in the original. In this case the default is set to an
+             empty string ('').
+
+
+Contexts
+========
+
+To reduce the amount of time spent on finding strings in the translation
+XML files, the strings are placed inside "context groups".
+When looking up a string id, only context groups which are marked with the
+context given to the gsa:i18n function will be searched.
+
+
+General guidelines for assigning and creating new contexts and groups
+---------------------------------------------------------------------
+
+When grouping strings, you should look for a compromise between the following:
+
+* Generic terms should use generic contexts to avoid redundant definitions
+   or inclusion into contexts that do not use them.
+
+* More specific strings should be used in specific contexts to keep the more
+   generic ones small.
+
+* To make finding the correct context easier you can put semantically similar
+   strings into a group for more contexts than strictly necessary so they
+   are not scattered throughout different context groups.
+
+* The amount of context assignments and groups should not grow too large to
+   reduce time searching them.
+
+
+Currently used contexts:
+------------------------
+"Logo"  : Strings used in the the logo header
+"MM"    : (Top level) main menu items
+"Login" : The login page
+"Help"  : Item labels for the Help menu / "Help: <Resource Type>"
+
+"Pagination" : Strings used for pagination labels
+"Filter Box" : The filter box at the top of table pages.
+"Time"       : Time related strings.
+"Severity"   : Severity related strings like the levels "High", "Medium", etc.
+"Status"     : Task status strings like "Running" or "Stop Requested"
+
+"Type"        : Capitalized singular resource type names, e.g. "Task"
+"Type Plural" : Capitalized plural resource type names, e.g. "Tasks"
+"Type Lower"        : Lower case singular resource type names, e.g. "task"
+"Type Plural Lower" : Lower case plural resource type names, e.g. "tasks"
+
+"Table Row"  : Generic actions, properties, etc. used inside table rows.
+               To be used many times on a single page.
+"Window"     : Generic actions, properties, etc. used everywhere except
+                table rows.
+               To be used sparsely, e.g. on details pages.
+
+"<RT>"           : The type name of the resource type <RT> as well as
+                   variants of very common terms like "New <RT>" or
+                   "<RT> Details".
+"<RT> Table Row" : Actions, properties, etc. specific to the resource type
+                   <RT> used inside table rows.
+                   To be used many times on a single page.
+"<RT> Window"    : Actions, properties, etc. specific to the resource type
+                   <RT> used everywhere except table rows.
+                   To be used sparsely, e.g. on details pages.
+
+"Trashcan"        : Strings used by the Trashcan page.
+"My Settings"     : Strings used by the "My Settings" page.
+"Performance"     : Strings used by the Performance page.
+"CVSS Calculator" : Strings used by the Performance page.
+"Feed Sync"       : Strings used by feed sync page like "NVT Sync"
+"Wizard"      : Strings shared by all wizards
+"Task Wizard" : Strings used by the Task Wizard
+"Advanced Task Wizard" : Strings used by the Advanced Task Wizard
+
+
+Structure of translation files
+==============================
+
+Elements
+--------
+  i18n : root element, contains multiple grp elements.
+  grp  : context group (See section "Contexts"), can contain multiple
+          ctxt and msg elements.
+  ctxt : context assignment, all messages in the same group will be available
+          in this context (See section "Contexts").
+  msg  : message, consisting of an id and a translated string (str).
+  id   : identifier string (usually untranslated version of a string)
+  str  : translated string
+
+
+Template for new resource types
+-------------------------------
+
+  <!-- 3.X      RESOURCEs -->
+  <!-- 3.X.1    RESOURCE type name and common strings -->
+  <grp>
+    <ctxt>RESOURCE</ctxt>
+    <ctxt>RESOURCE Window</ctxt>
+    <!-- - - Type name - - -->
+    <!-- - - Common actions - - -->
+    <!-- - - Common references - - -->
+  </grp>
+  <!-- 3.X.2    RESOURCE actions and properties - all views -->
+  <grp>
+    <ctxt>RESOURCE Table Row</ctxt>
+    <ctxt>RESOURCE Window</ctxt>
+    <!-- - - Actions - - -->
+    <!-- - - Properties - - -->
+    <!-- - - References and reference actions - - -->
+  </grp>
+  <!-- 3.X.3    RESOURCE actions and properties - window / headers only -->
+  <grp>
+    <ctxt>RESOURCE Window</ctxt>
+    <!-- - - Actions - - -->
+    <!-- - - Properties - - -->
+    <!-- - - References and reference actions - - -->
+  </grp>
+  <!-- 3.X.4    RESOURCE actions and properties - table rows only -->
+  <grp>
+    <ctxt>RESOURCE Table Row</ctxt>
+    <!-- - - Actions - - -->
+    <!-- - - Properties - - -->
+    <!-- - - References and reference actions - - -->
+  </grp>
+  <!-- 3.X.5    (Groups of special specific strings like Task Status) -->
+
+
+Creating new GSA page translations
+==================================
+The easiest way to create a new translation for GSA is to copy an existing,
+up-to-date language file (like de.xml) in the src/html/classic/po directory
+and replace the existing translated strings with ones in the language you are
+translating to.
+If you don't plan to translate all of GSA at once, you can also copy only
+the parts of the language file that contain the elements you wish to
+translate at the time. In this case the untranslated sections will fall back
+to the default language (English).
+
+The new file must be UTF-8 encoded and named "<lc>.xml" where <lc> is the
+ISO 639‑1 two-letter language code like it is also used by HTTP Accept-Language
+headers (e.g. "fr" for French or "nl" for Dutch).
+You also have to add the language to the xsl:choose element of the xsl variable
+i18n_po_path, which is found in src/html/classic/gsad.html .
+The line added should look like this, "lc" again being the language code:
+
+    <xsl:when test="$i18n_language = 'lc'">po/lc.xml</xsl:when>
+
+Finally, your new language file has to be installed in
+${GSA_DATA_DIR}/classic/po. To make it part of the standard installation,
+add it to the appropriate list of files in the CMakeList.txt file in the base
+GSA source directory.
+
+
+Translating help pages
+======================
+Translations for the help pages are contained in a file called "help_<lc>.xsl",
+where <lc> is the the two-letter language code the translation is for.
+
+For the stylesheet to work properly, it must include the default "help.xsl"
+at the beginning. 
+
+Next should be the named templates, which must use different names than the
+included default stylesheets. This is to avoid conflicts which would not only
+affect the template, but cause all of the XSL transformation to fail.
+
+For consistency you should use the name of their default stylesheet equivalent
+suffixed with an underscore and the language code.
+For example "availability" becomes "availability_de" if the language code is
+"de".
+
+After this the "Page not found" template should be placed, followed by the
+individual page templates.
+
+The new help file should also be UTF-8 encoded and has to be installed in the
+directory ${GSA_DATA_DIR}/classic.

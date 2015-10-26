@@ -1,0 +1,14 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="lsc_crypt_create_key",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="lsc_crypt_new",height=0.2,width=0.4,color="black",URL="$lsc__crypt_8c.html#a0d1618fba491ec2d5707545793944d18",tooltip="Return a new context for LSC encryption."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="lsc_crypt_release",height=0.2,width=0.4,color="black",URL="$lsc__crypt_8c.html#ae74d739b0aa90471b2ee7da8d415d548",tooltip="Release an LSC encryption context."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="lsc_crypt_flush",height=0.2,width=0.4,color="black",URL="$lsc__crypt_8c.html#a87f56fad71eec65ff82baf9df5084baf",tooltip="Flush an LSC encryption context."];
+}

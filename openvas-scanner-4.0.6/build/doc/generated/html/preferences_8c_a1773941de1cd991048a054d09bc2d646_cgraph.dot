@@ -1,0 +1,20 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="preferences_reset_cache",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="preferences_benice",height=0.2,width=0.4,color="black",URL="$preferences_8c.html#a20170fc28a771e2486e7f4e5e2a0faf0"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="preferences_log_plugins_at_load",height=0.2,width=0.4,color="black",URL="$preferences_8c.html#afab9a7c015181bff3d087915eda0ad73"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="preferences_log_whole_attack",height=0.2,width=0.4,color="black",URL="$preferences_8c.html#a2762ae49e6d0fafee0337f944d2b19e8"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="preferences_optimize_test",height=0.2,width=0.4,color="black",URL="$preferences_8c.html#a70642408641aab39b4918de362055ca8"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="preferences_plugins_timeout",height=0.2,width=0.4,color="black",URL="$preferences_8c.html#a7442fa49b37b619c8823965e0822f9ae"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="preferences_safe_checks_enabled",height=0.2,width=0.4,color="black",URL="$preferences_8c.html#af79755fe89d29e6429c4b96c57c1a978"];
+}

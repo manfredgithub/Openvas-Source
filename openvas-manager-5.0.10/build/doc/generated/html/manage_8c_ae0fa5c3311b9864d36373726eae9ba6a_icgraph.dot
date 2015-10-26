@@ -1,0 +1,12 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="openvas_migrate_secinfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="manage_migrate",height=0.2,width=0.4,color="black",URL="$manage__migrators_8c.html#a2523817cc30b1c63617a13eeaeda49a8",tooltip="Migrate database to version supported by this manager."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="main",height=0.2,width=0.4,color="black",URL="$openvasmd_8c.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip="Entry point to the manager."];
+}

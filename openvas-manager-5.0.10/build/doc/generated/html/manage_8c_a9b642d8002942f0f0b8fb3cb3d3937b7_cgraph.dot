@@ -1,0 +1,12 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="next_time",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="add_months",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#ac2f93247e09ac165faff05bc66621da0",tooltip="Add months to a time."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="months_between",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a4d8a11f127b4ed1ddc697d5c4af30bf5",tooltip="Count number of full months between two times."];
+}

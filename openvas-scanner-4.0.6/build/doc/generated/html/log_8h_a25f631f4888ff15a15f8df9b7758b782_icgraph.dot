@@ -1,0 +1,21 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="log_close",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="sighand_segv",height=0.2,width=0.4,color="black",URL="$sighand_8h.html#ac01ccf3a871f92b52595314e836dee5e"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="create_process",height=0.2,width=0.4,color="black",URL="$processes_8h.html#a33bddbaad1f0131543a4c9dfdb21cea3",tooltip="Create a new process (fork)."];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="attack_network",height=0.2,width=0.4,color="black",URL="$attack_8h.html#a8487544e41baa26d15e4f9a91e4b34b8",tooltip="Attack a whole network."];
+  Node4 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="nasl_plugin_launch",height=0.2,width=0.4,color="black",URL="$pluginload_8h.html#a8f0adeb1351ad9c6d13fbddcd46368ed",tooltip="Launch a NASL plugin."];
+  Node5 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="plugin_launch",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8c.html#a98de3d0683725309ac112c7ae19cd0fe"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="sighandler",height=0.2,width=0.4,color="black",URL="$sighand_8h.html#ab49a8b235c986751a39511f51f89fee2"];
+}

@@ -1,0 +1,12 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="threat_message_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="create_report",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#aab5f6eceaef5988df78b7c98e2e43eda",tooltip="Create a report from an array of results."];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="update_from_slave",height=0.2,width=0.4,color="black",URL="$manage__sql_8h.html#aa07658af0340638abe3ebd6ccb83d280",tooltip="Update the local task from the slave task."];
+}

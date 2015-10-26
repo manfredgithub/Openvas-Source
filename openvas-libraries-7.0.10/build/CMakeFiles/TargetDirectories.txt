@@ -1,0 +1,11 @@
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/doc/CMakeFiles/doc.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/doc/CMakeFiles/doc-full.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/base/CMakeFiles/indent.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/nasl/CMakeFiles/openvas-nasl.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/nasl/CMakeFiles/openvas-nasl-lint.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/base/CMakeFiles/openvas_base_shared.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/misc/CMakeFiles/openvas_misc_shared.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/nasl/CMakeFiles/openvas_nasl_shared.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/omp/CMakeFiles/openvas_omp_shared.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/base/CMakeFiles/print-indent-diff.dir
+/home/peterwang/OpenVAS_Source/openvas-libraries-7.0.10/build/base/CMakeFiles/test-hosts.dir

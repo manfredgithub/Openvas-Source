@@ -1,0 +1,16 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="wait_for_children",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="pluginlaunch_init",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#a4a7b1afd48034ddc80ddbcdf68c9e67b"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="pluginlaunch_wait",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#ad32d46ee5d27a76331962bb2c721766f",tooltip="Waits and &#39;pushes&#39; processes until num_running_processes is 0."];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="pluginlaunch_wait_for_free_process",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#a58c9370449452d4bfbc694686c5f2646",tooltip="Waits and &#39;pushes&#39; processes until the number of running processes has changed..."];
+  Node4 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="plugins_scheduler_next",height=0.2,width=0.4,color="black",URL="$pluginscheduler_8h.html#a10384fae06ada4c648c98590b2b22f93"];
+}

@@ -1,0 +1,14 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="is_client_present",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="data_left",height=0.2,width=0.4,color="black",URL="$utils_8c.html#aa080749ddb243cb1235ccc0e9dcff440"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="log_write",height=0.2,width=0.4,color="black",URL="$log_8c.html#aebd780cf62bc3eed16f852bd30250a3a"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="log_vwrite",height=0.2,width=0.4,color="black",URL="$log_8c.html#a20d71c8bbe1b9014a523f38e2fabbc02"];
+}

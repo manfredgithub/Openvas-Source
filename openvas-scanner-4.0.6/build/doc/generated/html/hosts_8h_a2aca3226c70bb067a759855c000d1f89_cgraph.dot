@@ -1,0 +1,18 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="hosts_new",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="hosts_read",height=0.2,width=0.4,color="black",URL="$hosts_8c.html#af5191588fd4d428e7b8dbd6c821cd979",tooltip="Returns -1 if client asked to stop all tests or connection was lost or error. 0 otherwise..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="hosts_stop_all",height=0.2,width=0.4,color="black",URL="$hosts_8c.html#a335840ff579312c5f8530e4227266064"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="hosts_stop_host",height=0.2,width=0.4,color="black",URL="$hosts_8c.html#a47c3825c4cb0c8ceee834d39f0f0d785"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="log_write",height=0.2,width=0.4,color="black",URL="$log_8c.html#aebd780cf62bc3eed16f852bd30250a3a"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="log_vwrite",height=0.2,width=0.4,color="black",URL="$log_8c.html#a20d71c8bbe1b9014a523f38e2fabbc02"];
+}

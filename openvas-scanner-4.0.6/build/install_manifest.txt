@@ -1,0 +1,9 @@
+/usr/local/openvas/sbin/openvassd
+/usr/local/openvas/sbin/openvas-mkcert
+/usr/local/openvas/sbin/openvas-mkcert-client
+/usr/local/openvas/sbin/openvas-nvt-sync
+/usr/local/openvas/sbin/greenbone-nvt-sync
+/usr/local/openvas/share/man/man8/openvassd.8
+/usr/local/openvas/share/man/man8/openvas-mkcert.8
+/usr/local/openvas/share/man/man8/openvas-nvt-sync.8
+/usr/local/openvas/share/man/man8/greenbone-nvt-sync.8

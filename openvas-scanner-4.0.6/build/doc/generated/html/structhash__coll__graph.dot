@@ -1,0 +1,11 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{hash\n|+ name\l+ plugin\l+ dependencies\l+ num_deps\l+ dependencies_ptr\l+ ports\l+ next\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="plugin",arrowtail="open",fontname="FreeSans"];
+  Node2 [label="{scheduler_plugin\n|+ running_state\l+ category\l+ timeout\l+ required_ports\l+ required_udp_ports\l+ required_keys\l+ mandatory_keys\l+ excluded_keys\l+ arglist\l+ parent_hash\l|}",height=0.2,width=0.4,color="black",URL="$structscheduler__plugin.html"];
+  Node1 -> Node2 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="parent_hash",arrowtail="open",fontname="FreeSans"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="next\ndependencies_ptr",arrowtail="open",fontname="FreeSans"];
+}

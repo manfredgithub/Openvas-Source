@@ -1,0 +1,15 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="validate_username",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="create_user",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#adcd8259d391b4b8e620b8ca5e4f36dbe",tooltip="Adds a new user to the OpenVAS installation."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="main",height=0.2,width=0.4,color="black",URL="$openvasmd_8c.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip="Entry point to the manager."];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="manage_create_user",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#ae8f025814f1c7b71709e9d74d0b4c42d",tooltip="Create the given user."];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

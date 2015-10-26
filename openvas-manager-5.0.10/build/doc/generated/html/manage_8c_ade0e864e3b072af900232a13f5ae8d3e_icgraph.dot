@@ -1,0 +1,23 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="delete_reports",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="delete_task",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#ab4cfb91c697232fbdfb230120b326586",tooltip="Complete deletion of a task."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="delete_task_lock",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a4e7bdff470931c42f111173a6f3ac027",tooltip="Complete deletion of a task."];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="process_otp_scanner_input",height=0.2,width=0.4,color="black",URL="$otp_8h.html#a1b96baa47510ea5ed59bb92d72667f9e",tooltip="Process any lines available in from_scanner."];
+  Node4 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="serve_omp",height=0.2,width=0.4,color="black",URL="$ompd_8h.html#a7f466dcff37e0ce892d857ce36fe024a",tooltip="Serve the OpenVAS Management Protocol (OMP)."];
+  Node5 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="serve_client",height=0.2,width=0.4,color="black",URL="$openvasmd_8c.html#a243bb570047f6e6f4653dfc8c2dd2ce6",tooltip="Serve the client."];
+  Node3 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="request_delete_task",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a2133d100c139991ff899fb7145840dcd",tooltip="Request deletion of a task."];
+  Node2 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="request_delete_task_uuid",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#ad0f16e5f692c84273a3f3e0feeddb5b9",tooltip="Request deletion of a task."];
+  Node1 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}

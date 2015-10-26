@@ -1,0 +1,91 @@
+<!--
+OpenVAS Manager
+$Id$
+Description: OpenVAS Manager Protocol (OMP) quick first scan wizard.
+
+Authors:
+Matthew Mundell <matthew.mundell@greenbone.net>
+Timo Pollmeier <timo.pollmeier@greenbone.net>
+
+Copyright:
+Copyright (C) 2012-2014 Greenbone Networks GmbH
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2,
+or, at your option, any later version as published by the Free
+Software Foundation
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<!--
+  This wizard sets up a new task and target to run an unauthenticated scan on a
+  host (or range of hosts) specified by the parameter "hosts" using the
+  "Full and Fast" scan config and default port range.
+
+  Required parameters:
+  hosts : The hosts to scan. Syntax is the same as for the hosts parameter of
+          the OMP command CREATE_TARGET.
+
+  To run this wizard, use the OMP command RUN_WIZARD.
+  Please see the OMP documentation for details.
+ -->
+
+<wizard>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <create_target>
+            <name><make_unique>1</make_unique>Target for immediate scan of IP <xsl:value-of select="/wizard/params/param[name='hosts']/value"/></name>
+            <hosts><xsl:value-of select="/wizard/params/param[name='hosts']/value"/></hosts>
+          </create_target>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <create_task>
+            <name>Immediate scan of IP <xsl:value-of select="/wizard/params/param[name='hosts']/value"/></name>
+            <target id="{/wizard/previous/response/create_target_response/@id}"/>
+            <config id="daba56c8-73ec-11df-a475-002264764cea"/>
+          </create_task>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <start_task task_id="{/wizard/previous/response/create_task_response/@id}"/>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+</wizard>

@@ -1,0 +1,134 @@
+INSTALLATION INSTRUCTIONS FOR OPENVAS-LIBRARIES
+===============================================
+
+Please note: The reference system used by most of the developers is Debian
+GNU/Linux 'Wheezy' 7. The build might fail on any other system. Also it is
+necessary to install dependent development packages.
+
+
+Prerequisites for openvas-libraries
+-----------------------------------
+
+See at the end of this section how to easily install these prerequisites on
+some supported platforms.
+
+General build environment:
+* a C compiler (e.g. gcc)
+* bison
+* flex
+* cmake
+* pkg-config
+
+Specific development libraries:
+* libglib >= 2.16
+* libgnutls >= 2.12
+* zlib
+* libpcap
+* libgpgme >= 1.1.2
+* uuid-dev (from e2fsprogs)
+
+Prerequisites for building documentation:
+* doxygen
+* xmltoman (optional, for building man page)
+* sqlfairy (optional, for producing database diagram)
+
+Recommended to have WMI support:
+* wmiclient library (see doc/wmi-howto.txt)
+
+Recommended to have improved SSH support:
+* libssh >= 0.5.0
+
+Recommended to have improved SSL support:
+* libksba >= 1.0.7
+
+Recommended to have LDAP support:
+* libldap >= 2.4.11
+  (LDAP can be disabled with -DBUILD_WITHOUT_LDAP=1)
+
+Install prerequisites on Debian GNU/Linux 'Wheezy' 7:
+# apt-get install pkg-config libssh-dev libgnutls-dev libglib2.0-dev libpcap-dev \
+  libgpgme11-dev uuid-dev bison libksba-dev
+
+
+Compiling openvas-libraries
+---------------------------
+
+If you have installed required libraries to a non-standard location, remember to
+set the PKG_CONFIG_PATH environment variable to the location of your pkg-config
+files before configuring:
+
+    $ export PKG_CONFIG_PATH=/your/location/lib/pkgconfig:$PKG_CONFIG_PATH
+
+Create a build directory and change into it with
+
+    $ mkdir build
+    $ cd build
+
+Configure the build with
+
+    $ cmake -DCMAKE_INSTALL_PREFIX=/path/to/your/installation ..
+
+or (if you want to use the default installation path /usr/local)
+
+    $ cmake ..
+
+This only needs to be done once.
+
+Thereafter, the following commands are useful.
+
+    $ make                # build the libraries
+    $ make doc            # build the documentation
+    $ make doc-full       # build more developer-oriented documentation
+    $ make install        # install the build
+    $ make rebuild_cache  # rebuild the cmake cache
+
+Please note that you may have to execute "make install" as root, especially if
+you have specified a prefix for which your user does not have full permissions.
+
+To clean up the build environment, simply remove the contents of the "build"
+directory you created above.
+
+
+Configuration Options
+---------------------
+
+During compilation, the build process uses a set of compiler options which
+enable very strict error checking and ask the compiler to abort should it detect
+any errors in the code. This is to ensure a maximum of code quality and
+security.
+
+Unfortunately, some (especially newer) compiler can be more strict than others
+when it comes to error checking. While this is a good thing and the OpenVAS
+developers aim to address all compiler warnings, it may lead the build process
+to abort on your system. Below you will find a list of the most common warnings
+and what you can do about them.
+
+(This list intentionally left empty)
+
+Should you notice any other error messages causing your build process to abort,
+do not hesitate to contact the OpenVAS developers using the mailing lists or IRC
+chat. Don't forget to include the name and version of your system and
+distribution in your message.
+
+
+Static code analysis with the Clang Static Analyzer
+---------------------------------------------------
+
+If you want to use the Clang Static Analyzer (http://clang-analyzer.llvm.org/)
+to do a static code analysis, you can do so by adding the following parameter
+when configuring the build:
+
+  -DCMAKE_C_COMPILER=/usr/share/clang/scan-build/ccc-analyzer
+
+Note that the example above uses the default location of ccc-analyzer in Debian
+GNU/Linux and may be different in other environments.
+
+To have the analysis results aggregated into a set of HTML files, use the
+following command:
+
+    $ scan-build make
+
+The tool will provide a hint on how to launch a web browser with the results.
+
+It is recommended to do this analysis in a separate, empty build directory and
+to empty the build directory before "scan-build" call.

@@ -1,0 +1,104 @@
+INSTALLATION INSTRUCTIONS FOR GREENBONE SECURITY ASSISTANT
+==========================================================
+
+Please note: The reference system used by most of the developers is Debian
+GNU/Linux 'Wheezy' 7. The build might fail on any other system. Also it is
+necessary to install dependent development packages.
+
+
+Prerequisites for Greenbone Security Assistant
+----------------------------------------------
+
+See at the end of this section how to easily install these prerequisites on
+some supported platforms.
+
+Prerequisites:
+* openvas-libraries (>= 7.0.0)
+* gnutls (>= 2.8)
+* cmake
+* glib-2.0 (>= 2.16)
+* libxml
+* libxslt
+* libmicrohttpd (>= 0.9.0)
+* libexslt
+* pkg-config
+* xsltproc
+
+Prerequisites for building documentation:
+* Doxygen
+* xmltoman (optional, for building man page)
+
+Install prerequisites on Debian GNU/Linux:
+# apt-get install libmicrohttpd-dev libxml2-dev libxslt1-dev
+
+
+Compiling Greenbone Security Assistant
+--------------------------------------
+
+If you have installed required libraries to a non-standard location, remember to
+set the PKG_CONFIG_PATH environment variable to the location of you pkg-config
+files before configuring:
+
+    $ export PKG_CONFIG_PATH=/your/location/lib/pkgconfig:$PKG_CONFIG_PATH
+
+Create a build directory and change into it with
+
+    $ mkdir build
+    $ cd build
+
+Then configure the build with
+
+    $ cmake -DCMAKE_INSTALL_PREFIX=/path/to/your/installation ..
+
+or (if you want to use the default installation path /usr/local)
+
+    $ cmake ..
+
+This only needs to be done once.  Note: It is assumed that the other OpenVAS
+components are installed to the same path.  If not, you need to set some paths
+separately, see below for details.
+
+Thereafter, the following commands are useful.
+
+    $ make                # build the Greenbone Security Assistant
+    $ make doc            # build the documentation
+    $ make doc-full       # build more developer-oriented documentation
+    $ make install        # install the build
+    $ make rebuild_cache  # rebuild the cmake cache
+
+
+In case you have installed the Greenbone Security Assistant into a path
+different from the other OpenVAS modules, you might need to set some paths
+explicitly before running cmake. The certificate and key locations in
+OPENVAS_SERVER_CERTIFICATE, OPENVAS_SERVER_KEY and OPENVAS_CA_CERTIFICATE in
+the top level CMakeLists.txt may need modifying.
+
+
+Static code analysis with the Clang Static Analyzer
+---------------------------------------------------
+
+If you want to use the Clang Static Analyzer (http://clang-analyzer.llvm.org/)
+to do a static code analysis, you can do so by adding the following parameter
+when configuring the build:
+
+  -DCMAKE_C_COMPILER=/usr/share/clang/scan-build/ccc-analyzer
+
+Note that the example above uses the default location of ccc-analyzer in Debian
+GNU/Linux and may be different in other environments.
+
+To have the analysis results aggregated into a set of HTML files, use the
+following command:
+
+    $ scan-build make
+
+The tool will provide a hint on how to launch a web browser with the results.
+
+It is recommended to do this analysis in a separate, empty build directory and
+to empty the build directory before "scan-build" call.
+
+
+Specifying Diffie-Hellman parameters file
+---------------------------------------------------
+
+For --dh-params' value to take effect, LibmicroHTTPD version 0.9.35 or higher is
+required.

@@ -1,0 +1,14 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="acknowledge_feed_version_info",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="process_otp_scanner_input",height=0.2,width=0.4,color="black",URL="$otp_8h.html#a1b96baa47510ea5ed59bb92d72667f9e",tooltip="Process any lines available in from_scanner."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="serve_omp",height=0.2,width=0.4,color="black",URL="$ompd_8h.html#a7f466dcff37e0ce892d857ce36fe024a",tooltip="Serve the OpenVAS Management Protocol (OMP)."];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="serve_client",height=0.2,width=0.4,color="black",URL="$openvasmd_8c.html#a243bb570047f6e6f4653dfc8c2dd2ce6",tooltip="Serve the client."];
+}

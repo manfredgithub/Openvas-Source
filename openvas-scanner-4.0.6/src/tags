@@ -1,0 +1,363 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CAT_MAX	comm.c	131;"	d	file:
+CREQ_ATTACHED_FILE	otp.h	/^  CREQ_ATTACHED_FILE,$/;"	e	enum:__anon2
+CREQ_LONG_ATTACK	otp.h	/^  CREQ_LONG_ATTACK,$/;"	e	enum:__anon2
+CREQ_NVT_INFO	otp.h	/^  CREQ_NVT_INFO,$/;"	e	enum:__anon2
+CREQ_OPENVAS_VERSION	otp.h	/^  CREQ_OPENVAS_VERSION,$/;"	e	enum:__anon2
+CREQ_PAUSE_WHOLE_TEST	otp.h	/^  CREQ_PAUSE_WHOLE_TEST,$/;"	e	enum:__anon2
+CREQ_PLUGIN_INFO	otp.h	/^  CREQ_PLUGIN_INFO,$/;"	e	enum:__anon2
+CREQ_PREFERENCES	otp.h	/^  CREQ_PREFERENCES,$/;"	e	enum:__anon2
+CREQ_RESUME_WHOLE_TEST	otp.h	/^  CREQ_RESUME_WHOLE_TEST,$/;"	e	enum:__anon2
+CREQ_STOP_ATTACK	otp.h	/^  CREQ_STOP_ATTACK,$/;"	e	enum:__anon2
+CREQ_STOP_WHOLE_TEST	otp.h	/^  CREQ_STOP_WHOLE_TEST,$/;"	e	enum:__anon2
+CREQ_UNKNOWN	otp.h	/^  CREQ_UNKNOWN,$/;"	e	enum:__anon2
+DEBUG_CONFLICTS	pluginlaunch.c	58;"	d	file:
+ERR_CANT_FORK	attack.c	69;"	d	file:
+ERR_HOST_DEAD	attack.c	68;"	d	file:
+HASH_MAX	pluginscheduler.c	67;"	d	file:
+HOSTS_H	hosts.h	32;"	d
+IN_SCHEDULER_CODE	pluginscheduler.c	44;"	d	file:
+LAUNCH_DISABLED	pluginscheduler.h	39;"	d
+LAUNCH_RUN	pluginscheduler.h	40;"	d
+MAP_FAILED	save_kb.c	59;"	d	file:
+MAX_FORK_RETRIES	attack.c	71;"	d	file:
+MAX_PROCESSES	pluginlaunch.c	54;"	d	file:
+MIN	ntp.c	53;"	d	file:
+NTP_PAUSE_WHOLE_TEST	ntp.h	37;"	d
+NTP_RESUME_WHOLE_TEST	ntp.h	38;"	d
+NTP_STOP_WHOLE_TEST	ntp.h	36;"	d
+OPENVAS_PIIC_H	piic.h	32;"	d
+PLUGINSCHEDULER_H	pluginscheduler.h	32;"	d
+PLUGINS_REQUIREMENTS_H__	plugs_req.h	32;"	d
+PLUGIN_STATUS_DONE	pluginscheduler.h	108;"	d
+PLUGIN_STATUS_DONE_AND_CLEANED	pluginscheduler.h	109;"	d
+PLUGIN_STATUS_RUNNING	pluginscheduler.h	107;"	d
+PLUGIN_STATUS_UNRUN	pluginscheduler.h	106;"	d
+PLUG_RUNNING	pluginscheduler.h	105;"	d
+SAVE_KB_H__	save_kb.h	32;"	d
+VERBOSE_LOGGING	pluginlaunch.c	56;"	d	file:
+_OPENVAS_COMM_H	comm.h	31;"	d
+_OPENVAS_LOCKS_H__	locks.h	31;"	d
+_OPENVAS_LOG_H	log.h	33;"	d
+_OPENVAS_NTP_H	ntp.h	32;"	d
+_OPENVAS_PLUGINLOAD_H	pluginload.h	32;"	d
+_OPENVAS_SIGHAND_H	sighand.h	32;"	d
+_OPENVAS_THREADS_H	processes.h	29;"	d
+_OPENVAS_UTILS_H	utils.h	32;"	d
+_OTP_H	otp.h	27;"	d
+__OPENVAS_ATTACK_H__	attack.h	30;"	d
+__OPENVAS_PREFERENCES_H	preferences.h	30;"	d
+__PLUGINLAUNCH_H__	pluginlaunch.h	31;"	d
+__ntp_timestamp_scan	ntp.c	/^__ntp_timestamp_scan (struct arglist *globals, char *msg)$/;"	f	file:
+__ntp_timestamp_scan_host	ntp.c	/^__ntp_timestamp_scan_host (struct arglist *globals, char *msg, char *host)$/;"	f	file:
+_get_plug_by_oid	comm.c	/^_get_plug_by_oid (struct arglist **array, char *oid, int start, int end,$/;"	f	file:
+_hash_get	pluginscheduler.c	/^_hash_get (struct hash *h, char *name)$/;"	f	file:
+alive	pluginlaunch.c	/^  int alive;                 \/**< 0 if dead. *\/$/;"	m	struct:running	file:
+apply_hosts_preferences	attack.c	/^apply_hosts_preferences (openvas_hosts_t *hosts, struct arglist *preferences)$/;"	f	file:
+apply_source_iface_preference	attack.c	/^apply_source_iface_preference (struct arglist *globals,$/;"	f	file:
+arg_replace_value	openvassd.c	/^arg_replace_value (struct arglist *arglist, char *name, int type, int length,$/;"	f	file:
+arglist	pluginscheduler.h	/^  struct arglist *arglist;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::arglist
+attack_atom	utils.h	/^struct attack_atom$/;"	s
+attack_handle_sigusr1	attack.c	/^attack_handle_sigusr1 ()$/;"	f	file:
+attack_handle_sigusr2	attack.c	/^attack_handle_sigusr2 ()$/;"	f	file:
+attack_host	attack.c	/^attack_host (struct arglist *globals, struct arglist *hostinfos, char *hostname,$/;"	f	file:
+attack_init_hostinfos	attack.c	/^attack_init_hostinfos (char *mac, char *hostname, struct in6_addr *ip,$/;"	f	file:
+attack_init_hostinfos_vhosts	attack.c	/^attack_init_hostinfos_vhosts (char *mac, char *hostname, struct in6_addr *ip,$/;"	f	file:
+attack_network	attack.c	/^attack_network (struct arglist *globals)$/;"	f
+attack_start	attack.c	/^attack_start (struct attack_start_args *args)$/;"	f	file:
+attack_start_args	attack.c	/^struct attack_start_args$/;"	s	file:
+build_global_host_sshlogins_map	ntp.c	/^build_global_host_sshlogins_map (struct arglist *globals, char *keyfiledata)$/;"	f	file:
+build_global_sshlogin_info_map	ntp.c	/^build_global_sshlogin_info_map (struct arglist *globals, char *keyfiledata)$/;"	f	file:
+calculate_eta	pluginload.c	/^calculate_eta (struct timeval start_time, int loaded, int total)$/;"	f
+category	pluginscheduler.h	/^  int category;$/;"	m	struct:scheduler_plugin
+check_and_reload	openvassd.c	/^check_and_reload ()$/;"	f	file:
+check_client	openvassd.c	/^check_client (char *dname)$/;"	f
+client_request_t	otp.h	/^} client_request_t;$/;"	t	typeref:enum:__anon2
+collect_nvts	pluginload.c	/^collect_nvts (const char *folder, const char *subdir, GSList * files)$/;"	f
+comm_init	comm.c	/^comm_init (int soc)$/;"	f
+comm_loading	comm.c	/^comm_loading (int soc)$/;"	f
+comm_send_nvt_info	comm.c	/^comm_send_nvt_info (struct arglist *globals)$/;"	f
+comm_send_pluginlist	comm.c	/^comm_send_pluginlist (struct arglist *globals)$/;"	f
+comm_send_preferences	comm.c	/^comm_send_preferences (struct arglist *globals)$/;"	f
+comm_setup_plugins	comm.c	/^comm_setup_plugins (struct arglist *globals, char *list)$/;"	f
+comm_terminate	comm.c	/^comm_terminate (struct arglist *globals)$/;"	f
+comm_wait_order	comm.c	/^comm_wait_order (struct arglist *globals)$/;"	f
+common	utils.c	/^common (l1, l2)$/;"	f
+create_process	processes.c	/^create_process (process_func_t function, void *argument)$/;"	f
+current_loading_plugins	pluginload.c	/^current_loading_plugins ()$/;"	f
+data_left	utils.c	/^data_left (soc)$/;"	f
+dependencies	pluginscheduler.h	/^  char **dependencies;$/;"	m	struct:hash
+dependencies_ptr	pluginscheduler.h	/^  struct hash **dependencies_ptr;$/;"	m	struct:hash	typeref:struct:hash::hash
+destroy_loading_shm	pluginload.c	/^destroy_loading_shm ()$/;"	f
+dump_cfg_specs	openvassd.c	/^dump_cfg_specs (struct arglist *prefs)$/;"	f	file:
+enable_plugin_and_dependencies	pluginscheduler.c	/^enable_plugin_and_dependencies (plugins_scheduler_t shed,$/;"	f	file:
+end_daemon_mode	openvassd.c	/^end_daemon_mode (void)$/;"	f	file:
+error_message_to_client	attack.c	/^error_message_to_client (struct arglist *globals, const char *msg,$/;"	f	file:
+excluded_keys	pluginscheduler.h	/^  struct arglist *excluded_keys;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::arglist
+file_lock	locks.c	/^file_lock (name)$/;"	f
+file_lock_name	locks.c	/^file_lock_name (name)$/;"	f	file:
+file_locked	locks.c	/^file_locked (name)$/;"	f
+file_unlock	locks.c	/^file_unlock (name)$/;"	f
+files_add_size_translation	ntp.c	/^files_add_size_translation (struct arglist *globals, const char *remotename,$/;"	f	file:
+files_add_translation	ntp.c	/^files_add_translation (struct arglist *globals, const char *remotename,$/;"	f	file:
+fill_host_kb_ssh_credentials	attack.c	/^fill_host_kb_ssh_credentials (kb_t kb, struct arglist *globals,$/;"	f	file:
+filter_odd_name	save_kb.c	/^filter_odd_name (char *name)$/;"	f	file:
+fork_sleep	attack.c	/^fork_sleep (int n)$/;"	f	file:
+forward	hosts.c	/^forward (int in, int out)$/;"	f	file:
+forward_all	hosts.c	/^forward_all (int in, int out)$/;"	f	file:
+fqdn	attack.c	/^  char fqdn[1024];$/;"	m	struct:attack_start_args	file:
+free_uploaded_file	attack.c	/^free_uploaded_file (gchar * key, gchar * value, gpointer ignored)$/;"	f
+g_max_hosts	hosts.c	/^static int g_max_hosts = 15;$/;"	v	file:
+g_options	openvassd.c	/^struct arglist *g_options = NULL;$/;"	v	typeref:struct:arglist
+g_soc	hosts.c	/^static int g_soc = -1;$/;"	v	file:
+gcrypt_init	openvassd.c	/^gcrypt_init ()$/;"	f	file:
+get_active_plugins_number	utils.c	/^get_active_plugins_number (struct arglist *plugins)$/;"	f
+get_closed_ports	plugs_req.c	/^get_closed_ports (kb_t kb, struct arglist *ports,$/;"	f	file:
+get_closed_udp_ports	plugs_req.c	/^get_closed_udp_ports (kb_t kb, struct arglist *ports,$/;"	f	file:
+get_max_checks_number	utils.c	/^get_max_checks_number (preferences)$/;"	f
+get_max_hosts_number	utils.c	/^get_max_hosts_number (preferences)$/;"	f
+get_plug_by_oid	comm.c	/^get_plug_by_oid (struct arglist **array, char *oid, int num_plugins)$/;"	f	file:
+get_x509_dname	openvassd.c	/^get_x509_dname (int soc, char *x509_dname, size_t x509_dname_size)$/;"	f	file:
+global_iana_socket	openvassd.c	/^int global_iana_socket;$/;"	v
+global_max_checks	openvassd.c	/^int global_max_checks = 10;$/;"	v
+global_max_hosts	openvassd.c	/^int global_max_hosts = 15;$/;"	v
+global_plugins	openvassd.c	/^struct arglist *global_plugins;$/;"	v	typeref:struct:arglist
+global_preferences	openvassd.c	/^struct arglist *global_preferences;$/;"	v	typeref:struct:arglist
+globals	attack.c	/^  struct arglist *globals;$/;"	m	struct:attack_start_args	typeref:struct:attack_start_args::arglist	file:
+globals	pluginlaunch.c	/^  struct arglist *globals;   \/**< 'Global' arglist. *\/$/;"	m	struct:running	typeref:struct:running::arglist	file:
+handle_client	openvassd.c	/^handle_client (struct arglist *globals)$/;"	f	file:
+hash	pluginscheduler.h	/^  struct hash *hash;            \/* Hash list of the plugins   *\/$/;"	m	struct:plugins_scheduler_struct	typeref:struct:plugins_scheduler_struct::hash
+hash	pluginscheduler.h	/^struct hash$/;"	s
+hash_add	pluginscheduler.c	/^hash_add (struct hash *h, char *name, struct scheduler_plugin *plugin)$/;"	f	file:
+hash_destroy	pluginscheduler.c	/^hash_destroy (struct hash *h)$/;"	f	file:
+hash_fill_deps	pluginscheduler.c	/^hash_fill_deps (struct hash *h, struct hash *l)$/;"	f	file:
+hash_get_deps_ptr	pluginscheduler.c	/^hash_get_deps_ptr (struct hash *h, char *name)$/;"	f	file:
+hash_init	pluginscheduler.c	/^hash_init ()$/;"	f	file:
+hash_link_destroy	pluginscheduler.c	/^hash_link_destroy (struct hash *h)$/;"	f	file:
+host	hosts.c	/^struct host$/;"	s	file:
+host_authorized	attack.c	/^host_authorized (const openvas_host_t *host, const struct in6_addr *addr,$/;"	f	file:
+host_mac_addr	attack.c	/^  char *host_mac_addr;$/;"	m	struct:attack_start_args	file:
+host_rm	hosts.c	/^host_rm (struct host *hosts, struct host *h)$/;"	f	file:
+hostip	attack.c	/^  struct in6_addr hostip;$/;"	m	struct:attack_start_args	typeref:struct:attack_start_args::in6_addr	file:
+hosts	hosts.c	/^static struct host *hosts = NULL;$/;"	v	typeref:struct:host	file:
+hosts_get	hosts.c	/^hosts_get (char *name)$/;"	f	file:
+hosts_init	hosts.c	/^hosts_init (int soc, int max_hosts)$/;"	f
+hosts_new	hosts.c	/^hosts_new (struct arglist *globals, char *name)$/;"	f
+hosts_num	hosts.c	/^hosts_num ()$/;"	f	file:
+hosts_pause_all	hosts.c	/^hosts_pause_all ()$/;"	f
+hosts_read	hosts.c	/^hosts_read (struct arglist *globals)$/;"	f
+hosts_read_client	hosts.c	/^hosts_read_client (struct arglist *globals)$/;"	f	file:
+hosts_read_data	hosts.c	/^hosts_read_data ()$/;"	f	file:
+hosts_resume_all	hosts.c	/^hosts_resume_all ()$/;"	f
+hosts_set_pid	hosts.c	/^hosts_set_pid (char *name, pid_t pid)$/;"	f
+hosts_stop_all	hosts.c	/^hosts_stop_all ()$/;"	f
+hosts_stop_host	hosts.c	/^hosts_stop_host (char *name)$/;"	f
+iface_authorized	attack.c	/^iface_authorized (const char *iface, struct arglist *preferences)$/;"	f	file:
+init_host_kb	attack.c	/^init_host_kb (struct arglist *globals, char *hostname,$/;"	f	file:
+init_loading_shm	pluginload.c	/^init_loading_shm ()$/;"	f
+init_network	openvassd.c	/^init_network (int port, int *sock, struct addrinfo addr)$/;"	f	file:
+init_openvassd	openvassd.c	/^init_openvassd (struct arglist *options, int first_pass, int stop_early,$/;"	f	file:
+init_plugins	openvassd.c	/^init_plugins (struct arglist *options)$/;"	f	file:
+init_ssl_ctx	openvassd.c	/^init_ssl_ctx (const char *priority, const char *dhparams)$/;"	f	file:
+internal_soc	pluginlaunch.c	/^  int internal_soc;          \/**< 'Input' socket for this process *\/$/;"	m	struct:running	file:
+is_client_present	utils.c	/^is_client_present (soc)$/;"	f
+is_pattern	attack.c	/^is_pattern (const char *str)$/;"	f	file:
+is_scanner_only_pref	utils.c	/^is_scanner_only_pref (const char *pref)$/;"	f
+is_valid_feed_version	comm.c	/^is_valid_feed_version (const char *feed_version)$/;"	f	file:
+kb	pluginlaunch.c	/^  kb_t kb;       \/**< Knowledge base for the currently tested host.*\/$/;"	m	struct:running	file:
+kb_dirname	save_kb.c	/^kb_dirname (void)$/;"	f	file:
+kb_fname	save_kb.c	/^kb_fname (char *hostname)$/;"	f	file:
+kb_mkdir	save_kb.c	/^kb_mkdir (char *dir)$/;"	f	file:
+kb_parse	piic.c	/^kb_parse (int soc, struct arglist *globals, struct kb_item **kb, char *buf,$/;"	f
+key_missing	plugs_req.c	/^key_missing (kb_t kb, struct arglist *keys)$/;"	f	file:
+key_present	plugs_req.c	/^key_present (kb_t kb, struct arglist *keys)$/;"	f	file:
+launch_plugin	attack.c	/^launch_plugin (struct arglist *globals, plugins_scheduler_t * sched,$/;"	f	file:
+launch_status	pluginlaunch.c	/^  int launch_status;$/;"	m	struct:running	file:
+let_em_die	sighand.c	/^let_em_die (int pid)$/;"	f
+list	pluginscheduler.h	/^  struct list *list[ACT_LAST + 1];      \/* Linked list of the plugins *\/$/;"	m	struct:plugins_scheduler_struct	typeref:struct:plugins_scheduler_struct::list
+list	pluginscheduler.h	/^struct list$/;"	s
+list2arglist	utils.c	/^list2arglist (list)$/;"	f
+list_destroy	pluginscheduler.c	/^list_destroy (struct list *list)$/;"	f
+loading_client_handle	openvassd.c	/^loading_client_handle (int soc)$/;"	f	file:
+loading_handler_start	openvassd.c	/^loading_handler_start ()$/;"	f	file:
+loading_handler_stop	openvassd.c	/^loading_handler_stop (pid_t handler_pid)$/;"	f
+loading_shm	pluginload.c	/^static int *loading_shm = NULL;$/;"	v	file:
+loading_shmid	pluginload.c	/^static int loading_shmid = 0;$/;"	v	file:
+loading_stop	openvassd.c	/^static int loading_stop = 0;$/;"	v	file:
+log	log.c	/^static FILE *log;$/;"	v	file:
+log_close	log.c	/^log_close ()$/;"	f
+log_init	log.c	/^log_init (const char *filename)$/;"	f
+log_vwrite	log.c	/^log_vwrite (const char *str, va_list arg_ptr)$/;"	f
+log_write	log.c	/^log_write (const char *str, ...)$/;"	f
+main	openvassd.c	/^main (int argc, char *argv[])$/;"	f
+main_loop	openvassd.c	/^main_loop ()$/;"	f	file:
+make_em_die	sighand.c	/^make_em_die (int sig)$/;"	f
+mandatory_keys	pluginscheduler.h	/^  struct arglist *mandatory_keys;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::arglist
+mandatory_requirements_met	plugs_req.c	/^mandatory_requirements_met (kb_t kb,$/;"	f
+map_file	save_kb.c	/^map_file (int file)$/;"	f	file:
+max_running_processes	pluginlaunch.c	/^static int max_running_processes;$/;"	v	file:
+mkhash	pluginscheduler.c	/^mkhash (char *name)$/;"	f	file:
+name	hosts.c	/^  char *name;$/;"	m	struct:host	file:
+name	pluginlaunch.c	/^  char *name;$/;"	m	struct:running	file:
+name	pluginscheduler.h	/^  char *name;$/;"	m	struct:hash
+name	pluginscheduler.h	/^  char *name;$/;"	m	struct:list
+name	pluginscheduler.h	/^  char *name;$/;"	m	struct:watch_list
+name	pluginscheduler.h	/^  char name[64];$/;"	m	struct:plist
+name	utils.h	/^  char *name;$/;"	m	struct:attack_atom
+nasl_plugin_add	nasl_plugins.c	/^nasl_plugin_add (char *folder, char *name, struct arglist *plugins,$/;"	f
+nasl_plugin_launch	nasl_plugins.c	/^nasl_plugin_launch (struct arglist *globals, struct arglist *plugin,$/;"	f
+nasl_thread	nasl_plugins.c	/^nasl_thread (struct arglist *g_args)$/;"	f	file:
+next	hosts.c	/^  struct host *next;$/;"	m	struct:host	typeref:struct:host::host	file:
+next	pluginscheduler.h	/^  struct hash *next;$/;"	m	struct:hash	typeref:struct:hash::hash
+next	pluginscheduler.h	/^  struct list *next;$/;"	m	struct:list	typeref:struct:list::list
+next	pluginscheduler.h	/^  struct plist *next;$/;"	m	struct:plist	typeref:struct:plist::plist
+next	pluginscheduler.h	/^  struct watch_list *next;$/;"	m	struct:watch_list	typeref:struct:watch_list::watch_list
+next	utils.h	/^  struct attack_atom *next;$/;"	m	struct:attack_atom	typeref:struct:attack_atom::attack_atom
+next_free_process	pluginlaunch.c	/^next_free_process (struct scheduler_plugin *upcoming)$/;"	f	file:
+non_simult_ports_list	pluginlaunch.c	/^static struct arglist *non_simult_ports_list;$/;"	v	typeref:struct:arglist	file:
+ntp_long_attack	ntp.c	/^ntp_long_attack (struct arglist *globals)$/;"	f	file:
+ntp_parse_input	ntp.c	/^ntp_parse_input (struct arglist *globals, char *input)$/;"	f
+ntp_read_prefs	ntp.c	/^ntp_read_prefs (struct arglist *globals)$/;"	f	file:
+ntp_recv_file	ntp.c	/^ntp_recv_file (struct arglist *globals)$/;"	f
+ntp_timestamp_host_scan_ends	ntp.c	/^ntp_timestamp_host_scan_ends (struct arglist *globals, char *host)$/;"	f
+ntp_timestamp_host_scan_interrupted	ntp.c	/^ntp_timestamp_host_scan_interrupted (struct arglist *globals, char *host)$/;"	f
+ntp_timestamp_host_scan_starts	ntp.c	/^ntp_timestamp_host_scan_starts (struct arglist *globals, char *host)$/;"	f
+ntp_timestamp_scan_ends	ntp.c	/^ntp_timestamp_scan_ends (struct arglist *globals)$/;"	f
+ntp_timestamp_scan_starts	ntp.c	/^ntp_timestamp_scan_starts (struct arglist *globals)$/;"	f
+num_deps	pluginscheduler.h	/^  int num_deps;$/;"	m	struct:hash
+num_running_processes	pluginlaunch.c	/^static int num_running_processes;$/;"	v	file:
+nvt_feed_version	comm.c	/^nvt_feed_version (char *feed_version, int feed_size)$/;"	f	file:
+occurences	pluginscheduler.h	/^  int occurences;$/;"	m	struct:plist
+old_max_running_processes	pluginlaunch.c	/^static int old_max_running_processes;$/;"	v	file:
+openvas_signal	sighand.c	/^void (*openvas_signal (int signum, void (*handler) (int))) (int)$/;"	f
+openvassd_defaults	preferences.c	/^static openvassd_option openvassd_defaults[] = {$/;"	v	file:
+openvassd_option	preferences.c	/^} openvassd_option;$/;"	t	typeref:struct:__anon1	file:
+option	preferences.c	/^  char *option;$/;"	m	struct:__anon1	file:
+otp_get_client_request	otp.c	/^otp_get_client_request (char *str)$/;"	f
+otp_server_openvas_version	otp.c	/^otp_server_openvas_version (struct arglist *globals)$/;"	f
+ovas_scanner_ctx	openvassd.c	/^static ovas_scanner_context_t ovas_scanner_ctx = NULL;$/;"	v	file:
+parent_hash	pluginscheduler.h	/^  struct hash *parent_hash;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::hash
+pattern_matches	attack.c	/^pattern_matches (char *key_pattern, char *value_login, char *hostname)$/;"	f	file:
+pause_whole_test	attack.c	/^static int pause_whole_test = 0;$/;"	v	file:
+pid	hosts.c	/^  pid_t pid;$/;"	m	struct:host	file:
+pid	pluginlaunch.c	/^  int pid;             \/**< Process ID. *\/$/;"	m	struct:running	file:
+pl_get	pluginscheduler.c	/^pl_get (struct plist *list, char *name)$/;"	f
+plist	pluginscheduler.h	/^  struct plist *plist;          \/* Ports currently in use     *\/$/;"	m	struct:plugins_scheduler_struct	typeref:struct:plugins_scheduler_struct::plist
+plist	pluginscheduler.h	/^struct plist$/;"	s
+plugin	pluginlaunch.c	/^  struct scheduler_plugin *plugin;$/;"	m	struct:running	typeref:struct:running::scheduler_plugin	file:
+plugin	pluginscheduler.h	/^  struct scheduler_plugin *plugin;$/;"	m	struct:hash	typeref:struct:hash::scheduler_plugin
+plugin	pluginscheduler.h	/^  struct scheduler_plugin *plugin;$/;"	m	struct:list	typeref:struct:list::scheduler_plugin
+plugin_free	pluginload.c	/^plugin_free (plugin)$/;"	f
+plugin_get_running_state	pluginscheduler.c	/^plugin_get_running_state (struct scheduler_plugin *plugin)$/;"	f
+plugin_get_socket	pluginload.c	/^plugin_get_socket (struct arglist *plugin)$/;"	f
+plugin_launch	pluginlaunch.c	/^plugin_launch (struct arglist *globals, plugins_scheduler_t * sched,$/;"	f
+plugin_next_unrun_dependencie	pluginscheduler.c	/^plugin_next_unrun_dependencie (plugins_scheduler_t sched,$/;"	f
+plugin_send_infos	comm.c	/^plugin_send_infos (struct arglist *globals, char *oid)$/;"	f
+plugin_set_running_state	pluginscheduler.c	/^plugin_set_running_state (struct scheduler_plugin *plugin, int state)$/;"	f
+plugin_set_socket	pluginload.c	/^plugin_set_socket (struct arglist *plugin, int soc)$/;"	f
+plugin_unlink	pluginload.c	/^plugin_unlink (plugin)$/;"	f
+pluginlaunch_disable_parrallel_checks	pluginlaunch.c	/^pluginlaunch_disable_parrallel_checks ()$/;"	f
+pluginlaunch_enable_parrallel_checks	pluginlaunch.c	/^pluginlaunch_enable_parrallel_checks ()$/;"	f
+pluginlaunch_init	pluginlaunch.c	/^pluginlaunch_init (struct arglist *globals)$/;"	f
+pluginlaunch_stop	pluginlaunch.c	/^pluginlaunch_stop ()$/;"	f
+pluginlaunch_wait	pluginlaunch.c	/^pluginlaunch_wait ()$/;"	f
+pluginlaunch_wait_for_free_process	pluginlaunch.c	/^pluginlaunch_wait_for_free_process ()$/;"	f
+plugins_free	pluginload.c	/^plugins_free (plugins)$/;"	f
+plugins_init	pluginload.c	/^plugins_init (struct arglist *preferences)$/;"	f
+plugins_reload_from_dir	pluginload.c	/^plugins_reload_from_dir (struct arglist *preferences, struct arglist *plugins,$/;"	f	file:
+plugins_scheduler_free	pluginscheduler.c	/^plugins_scheduler_free (plugins_scheduler_t sched)$/;"	f
+plugins_scheduler_init	pluginscheduler.c	/^plugins_scheduler_init (struct arglist *plugins, int autoload,$/;"	f
+plugins_scheduler_next	pluginscheduler.c	/^plugins_scheduler_next (plugins_scheduler_t h)$/;"	f
+plugins_scheduler_struct	pluginscheduler.h	/^struct plugins_scheduler_struct$/;"	s
+plugins_scheduler_t	pluginscheduler.h	/^typedef struct plugins_scheduler_struct *plugins_scheduler_t;$/;"	t	typeref:struct:plugins_scheduler_struct
+plugins_scheduler_t	pluginscheduler.h	/^typedef void *plugins_scheduler_t;$/;"	t
+plugins_set_socket	pluginload.c	/^plugins_set_socket (struct arglist *plugins, int soc)$/;"	f
+ports	pluginscheduler.h	/^  char **ports;$/;"	m	struct:hash
+pr_sigterm	processes.c	/^pr_sigterm (int sig)$/;"	f	file:
+preferences_benice	preferences.c	/^preferences_benice (struct arglist *preferences)$/;"	f
+preferences_drop_privileges	preferences.c	/^preferences_drop_privileges (struct arglist *preferences)$/;"	f
+preferences_get_bool	preferences.c	/^preferences_get_bool (struct arglist *preferences, char *name)$/;"	f
+preferences_get_string	preferences.c	/^preferences_get_string (struct arglist *preferences, char *name)$/;"	f
+preferences_init	preferences.c	/^preferences_init (char *config_file, struct arglist **prefs)$/;"	f
+preferences_log_plugins_at_load	preferences.c	/^preferences_log_plugins_at_load (struct arglist *preferences)$/;"	f
+preferences_log_whole_attack	preferences.c	/^preferences_log_whole_attack (struct arglist *preferences)$/;"	f
+preferences_nasl_no_signature_check	preferences.c	/^preferences_nasl_no_signature_check (struct arglist *preferences)$/;"	f
+preferences_optimize_test	preferences.c	/^preferences_optimize_test (struct arglist *preferences)$/;"	f
+preferences_plugin_timeout	preferences.c	/^preferences_plugin_timeout (struct arglist *preferences, char *oid)$/;"	f
+preferences_plugins_timeout	preferences.c	/^preferences_plugins_timeout (struct arglist *preferences)$/;"	f
+preferences_process	preferences.c	/^preferences_process (char *filename, struct arglist *prefs)$/;"	f
+preferences_reset_cache	preferences.c	/^preferences_reset_cache ()$/;"	f
+preferences_safe_checks_enabled	preferences.c	/^preferences_safe_checks_enabled (struct arglist *preferences)$/;"	f
+prev	hosts.c	/^  struct host *prev;$/;"	m	struct:host	typeref:struct:host::host	file:
+prev	pluginscheduler.h	/^  struct list *prev;$/;"	m	struct:list	typeref:struct:list::list
+prev	pluginscheduler.h	/^  struct plist *prev;$/;"	m	struct:plist	typeref:struct:plist::plist
+process_alive	utils.c	/^process_alive (pid_t pid)$/;"	f
+process_func_t	processes.h	/^typedef int (*process_func_t) (void *);$/;"	t
+process_internal_msg	pluginlaunch.c	/^process_internal_msg (int p)$/;"	f	file:
+process_mgr_sighand_term	pluginlaunch.c	/^process_mgr_sighand_term (int sig)$/;"	f
+process_son	processes.c	/^static int process_son = 0;$/;"	v	file:
+processes	pluginlaunch.c	/^static struct running processes[MAX_PROCESSES];$/;"	v	typeref:struct:running	file:
+psoc	hosts.c	/^  int psoc;$/;"	m	struct:host	file:
+psoc	utils.h	/^  int psoc;\/**< private socket *\/$/;"	m	struct:attack_atom
+qsort_cmp	comm.c	/^qsort_cmp (const void *a, const void *b)$/;"	f	file:
+read_running_processes	pluginlaunch.c	/^read_running_processes ()$/;"	f	file:
+reload	openvassd.c	/^static int reload = 0;$/;"	v	file:
+reload_openvassd	openvassd.c	/^reload_openvassd ()$/;"	f	file:
+required_keys	pluginscheduler.h	/^  struct arglist *required_keys;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::arglist
+required_ports	pluginscheduler.h	/^  struct arglist *required_ports;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::arglist
+required_udp_ports	pluginscheduler.h	/^  struct arglist *required_udp_ports;$/;"	m	struct:scheduler_plugin	typeref:struct:scheduler_plugin::arglist
+requirements_common_ports	plugs_req.c	/^requirements_common_ports (struct scheduler_plugin *plugin1,$/;"	f
+requirements_plugin	plugs_req.c	/^requirements_plugin (kb_t kb, struct scheduler_plugin *plugin,$/;"	f
+running	pluginlaunch.c	/^struct running$/;"	s	file:
+running_state	pluginscheduler.h	/^  int running_state;$/;"	m	struct:scheduler_plugin
+save_kb	save_kb.c	/^save_kb (struct arglist *globals)$/;"	f
+save_kb_backup	save_kb.c	/^save_kb_backup (char *hostname)$/;"	f
+save_kb_close	save_kb.c	/^save_kb_close (struct arglist *globals, char *hostname)$/;"	f
+save_kb_entry_present_already	save_kb.c	/^save_kb_entry_present_already (struct arglist *globals, char *name, char *value)$/;"	f	file:
+save_kb_exists	save_kb.c	/^save_kb_exists (char *hostname)$/;"	f
+save_kb_load_kb	save_kb.c	/^save_kb_load_kb (struct arglist *globals, char *hostname)$/;"	f
+save_kb_new	save_kb.c	/^save_kb_new (struct arglist *globals, char *hostname)$/;"	f
+save_kb_restore_backup	save_kb.c	/^save_kb_restore_backup (char *hostname)$/;"	f
+save_kb_rm_entry	save_kb.c	/^save_kb_rm_entry (struct arglist *globals, char *name)$/;"	f	file:
+save_kb_rm_entry_value	save_kb.c	/^save_kb_rm_entry_value (struct arglist *globals, char *name, char *value)$/;"	f	file:
+save_kb_write	save_kb.c	/^save_kb_write (struct arglist *globals, char *hostname, char *name, char *value,$/;"	f	file:
+save_kb_write_int	save_kb.c	/^save_kb_write_int (struct arglist *globals, char *hostname, char *name,$/;"	f
+save_kb_write_str	save_kb.c	/^save_kb_write_str (struct arglist *globals, char *hostname, char *name,$/;"	f
+scanner_thread	openvassd.c	/^scanner_thread (struct arglist *globals)$/;"	f	file:
+sched	attack.c	/^  plugins_scheduler_t sched;$/;"	m	struct:attack_start_args	file:
+sched	pluginlaunch.c	/^  plugins_scheduler_t sched;$/;"	m	struct:running	file:
+scheduler_mark_running_ports	pluginscheduler.c	/^scheduler_mark_running_ports (plugins_scheduler_t sched,$/;"	f
+scheduler_plugin	pluginscheduler.h	/^struct scheduler_plugin$/;"	s
+scheduler_rm_running_ports	pluginscheduler.c	/^scheduler_rm_running_ports (plugins_scheduler_t sched,$/;"	f
+send_plug_info	comm.c	/^send_plug_info (struct arglist *globals, struct arglist *plugins)$/;"	f
+set_current_loading_plugins	pluginload.c	/^set_current_loading_plugins (int current)$/;"	f
+set_daemon_mode	openvassd.c	/^set_daemon_mode ()$/;"	f	file:
+set_globals_from_preferences	openvassd.c	/^set_globals_from_preferences (struct arglist *prefs)$/;"	f	file:
+set_total_loading_plugins	pluginload.c	/^set_total_loading_plugins (int total)$/;"	f
+sigchld_handler	hosts.c	/^sigchld_handler (int sig)$/;"	f	file:
+sighand_chld	sighand.c	/^sighand_chld (pid_t pid)$/;"	f
+sighand_loading_handler	openvassd.c	/^sighand_loading_handler (int sig)$/;"	f	file:
+sighand_segv	sighand.c	/^sighand_segv ()$/;"	f
+sighandler	sighand.c	/^sighandler (int sign)$/;"	f
+sighup	openvassd.c	/^sighup (int i)$/;"	f	file:
+soc	hosts.c	/^  int soc;$/;"	m	struct:host	file:
+soc	utils.h	/^  int soc; \/**< public socket  *\/$/;"	m	struct:attack_atom
+start	pluginlaunch.c	/^  struct timeval start;$/;"	m	struct:running	typeref:struct:running::timeval	file:
+start_daemon_mode	openvassd.c	/^start_daemon_mode (void)$/;"	f	file:
+str_in_comma_list	attack.c	/^str_in_comma_list (const char *str, const char *comma_list)$/;"	f	file:
+terminate_process	processes.c	/^terminate_process (pid_t pid)$/;"	f
+thread_socket	attack.c	/^  int thread_socket;$/;"	m	struct:attack_start_args	file:
+timeout	pluginlaunch.c	/^  int timeout;               \/**< Timeout after which to kill process$/;"	m	struct:running	file:
+timeout	pluginscheduler.h	/^  int timeout;$/;"	m	struct:scheduler_plugin
+total_loading_plugins	pluginload.c	/^total_loading_plugins ()$/;"	f
+update_running_processes	pluginlaunch.c	/^update_running_processes ()$/;"	f	file:
+upstream_soc	pluginlaunch.c	/^  int upstream_soc;$/;"	m	struct:running	file:
+value	preferences.c	/^  char *value;$/;"	m	struct:__anon1	file:
+wait_for_children	pluginlaunch.c	/^wait_for_children (int sig)$/;"	f
+wait_for_children1	utils.c	/^wait_for_children1 ()$/;"	f
+watch_list	pluginscheduler.h	/^struct watch_list$/;"	s

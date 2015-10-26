@@ -1,0 +1,24 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="lsc_crypt_flush",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="lsc_crypt_release",height=0.2,width=0.4,color="black",URL="$lsc__crypt_8h.html#aa383411c640ff7e7bfcac95ea1fba084",tooltip="Release an LSC encryption context."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="cleanup_iterator",height=0.2,width=0.4,color="black",URL="$sql_8h.html#aa98d17659363974764692d019f4d8172",tooltip="Cleanup an iterator."];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="create_lsc_credential",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a43ff5c14c099aff1899b64af60bd4d52",tooltip="Create an LSC credential."];
+  Node2 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="lsc_crypt_create_key",height=0.2,width=0.4,color="black",URL="$lsc__crypt_8h.html#a20aec9824d6c37f9c133d06347750f69",tooltip="Create the standard credential encryption key."];
+  Node5 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="main",height=0.2,width=0.4,color="black",URL="$openvasmd_8c.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip="Entry point to the manager."];
+  Node2 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="set_lsc_credential_password",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a41ebed061ff75d420667a7542a217a45",tooltip="Set the password of an LSC credential."];
+  Node7 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="modify_lsc_credential",height=0.2,width=0.4,color="black",URL="$manage__sql_8c.html#a7ee01b7720ef30d8217705fb1b31995f",tooltip="Modify a LSC Credential."];
+  Node1 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="next",height=0.2,width=0.4,color="black",URL="$sql_8h.html#a821a1a0d4e2daaa3fb6a485ebf0ac67a",tooltip="Increment an iterator."];
+}

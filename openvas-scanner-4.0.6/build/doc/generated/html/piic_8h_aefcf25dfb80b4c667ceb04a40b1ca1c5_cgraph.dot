@@ -1,0 +1,14 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="kb_parse",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="save_kb",height=0.2,width=0.4,color="black",URL="$save__kb_8c.html#aa8a7c2722346c3fc2e07f7e3fff73b19"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="save_kb_write_int",height=0.2,width=0.4,color="black",URL="$save__kb_8c.html#a79d109a426605a5d7656e68c206c4412"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="save_kb_write_str",height=0.2,width=0.4,color="black",URL="$save__kb_8c.html#aecc57af2ed527c45f00315ab55647f11"];
+}

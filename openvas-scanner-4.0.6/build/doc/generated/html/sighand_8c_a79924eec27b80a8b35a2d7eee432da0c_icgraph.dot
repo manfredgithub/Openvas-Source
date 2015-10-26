@@ -1,0 +1,21 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="openvas_signal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="create_process",height=0.2,width=0.4,color="black",URL="$processes_8h.html#a33bddbaad1f0131543a4c9dfdb21cea3",tooltip="Create a new process (fork)."];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="attack_network",height=0.2,width=0.4,color="black",URL="$attack_8h.html#a8487544e41baa26d15e4f9a91e4b34b8",tooltip="Attack a whole network."];
+  Node3 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="nasl_plugin_launch",height=0.2,width=0.4,color="black",URL="$pluginload_8h.html#a8f0adeb1351ad9c6d13fbddcd46368ed",tooltip="Launch a NASL plugin."];
+  Node4 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="plugin_launch",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8c.html#a98de3d0683725309ac112c7ae19cd0fe"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="pluginlaunch_init",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#a4a7b1afd48034ddc80ddbcdf68c9e67b"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="pluginlaunch_stop",height=0.2,width=0.4,color="black",URL="$pluginlaunch_8h.html#ab0f1daaa3f4159b5f781d33ec06f5934"];
+}

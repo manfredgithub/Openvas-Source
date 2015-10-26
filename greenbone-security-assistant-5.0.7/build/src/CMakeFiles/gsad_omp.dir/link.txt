@@ -1,0 +1,2 @@
+/usr/bin/ar cr libgsad_omp.a  CMakeFiles/gsad_omp.dir/gsad_omp.c.o
+/usr/bin/ranlib libgsad_omp.a

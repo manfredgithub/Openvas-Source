@@ -1,0 +1,13 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="src/logf.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="src/ompd.c",height=0.2,width=0.4,color="black",URL="$ompd_8c.html",tooltip="The OpenVAS Manager OMP daemon."];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="src/openvasmd.c",height=0.2,width=0.4,color="black",URL="$openvasmd_8c.html",tooltip="The OpenVAS Manager daemon."];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="src/ovas-mngr-comm.c",height=0.2,width=0.4,color="black",URL="$ovas-mngr-comm_8c.html",tooltip="API for communication between openvas-manager and openvas-server."];
+}

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/peterwang/OpenVAS_Source/openvas-cli-1.3.1/omp/omp.c
+assert.h
+-
+errno.h
+-
+glib.h
+-
+locale.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+termios.h
+-
+unistd.h
+-
+openvas/misc/openvas_server.h
+-
+winsock2.h
+-
+openvas/misc/openvas_logging.h
+-
+openvas/omp/omp.h
+-
+openvas/omp/xml.h
+-
+

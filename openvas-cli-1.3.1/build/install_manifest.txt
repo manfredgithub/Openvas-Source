@@ -1,0 +1,4 @@
+/usr/local/openvas/bin/omp
+/usr/local/openvas/bin/check_omp
+/usr/local/openvas/bin/omp-dialog
+/usr/local/openvas/share/man/man8/omp.8

@@ -1,0 +1,21 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="save_kb_new",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="file_lock",height=0.2,width=0.4,color="black",URL="$locks_8c.html#a40b41c04a5df1cc6c64c26b508166a5d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="file_locked",height=0.2,width=0.4,color="black",URL="$locks_8c.html#ac9109c8213cd8478105ec4b5b56e9b1c"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="file_unlock",height=0.2,width=0.4,color="black",URL="$locks_8c.html#a5237a98830f3ba49d14bc95b25f72ad2"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="log_write",height=0.2,width=0.4,color="black",URL="$log_8c.html#aebd780cf62bc3eed16f852bd30250a3a"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="log_vwrite",height=0.2,width=0.4,color="black",URL="$log_8c.html#a20d71c8bbe1b9014a523f38e2fabbc02"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="process_alive",height=0.2,width=0.4,color="black",URL="$utils_8c.html#affd062302c0cfe28759d8bbbc03b0027"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+}
